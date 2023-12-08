@@ -4,12 +4,7 @@
 \alias{read_channel_table}
 \title{Read Tabular Data from a Teams Channel}
 \usage{
-read_channel_table(
-  team = "Statistics Production Division",
-  channel = "Team files and A_L",
-  filepath = "QPD/Knowledge bank/QPD knowledge bank.xlsx",
-  ...
-)
+read_channel_table(team, channel, filepath, ...)
 }
 \arguments{
 \item{team}{Character. The name of a Teams team.}
@@ -36,7 +31,7 @@ You need to have a token on your computer that authorises you to use
 the scopes required to access data on Teams. The easiest way to do this is
 to run a function like \link[Microsoft365R:client]{Microsoft365R::list_teams}, which will open a
 browser window and authorise you automatically. Then you can use
-{defenestrate} functions. You only need to do this authorisation once.
+'defenestrate' functions. You only need to do this authorisation once.
 
 Note that you'll see the message 'Loading Microsoft Graph login for
 default tenant' when tokens are being checked. You may also see 'Access

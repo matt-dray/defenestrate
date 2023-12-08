@@ -4,7 +4,7 @@
 \alias{list_teams_channels}
 \title{List Available Channels in a Teams Team}
 \usage{
-list_teams_channels(team = "Statistics Production Division")
+list_teams_channels(team)
 }
 \arguments{
 \item{team}{Character. The name of a Teams team.}

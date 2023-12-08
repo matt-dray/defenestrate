@@ -54,7 +54,7 @@ list_teams_teams <- function() {
 #' @export
 #'
 #' @examples \dontrun{list_teams_channels("Statistics Production Division"))}
-list_teams_channels <- function(team = "Statistics Production Division") {
+list_teams_channels <- function(team) {
 
   .check_internet()
   .check_auth(scope_group = "teams")

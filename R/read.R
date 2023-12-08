@@ -17,7 +17,7 @@
 #'   the scopes required to access data on Teams. The easiest way to do this is
 #'   to run a function like [Microsoft365R::list_teams], which will open a
 #'   browser window and authorise you automatically. Then you can use
-#'   {defenestrate} functions. You only need to do this authorisation once.
+#'   'defenestrate' functions. You only need to do this authorisation once.
 #'
 #' @details Note that you'll see the message 'Loading Microsoft Graph login for
 #'   default tenant' when tokens are being checked. You may also see 'Access
@@ -38,12 +38,7 @@
 #'
 #' @examples
 #'     \dontrun{read_channel_table("Team Name", "Channel Name", "file.csv")}
-read_channel_table <- function(
-    team      = "Statistics Production Division",
-    channel   = "Team files and A_L",
-    filepath  = "QPD/Knowledge bank/QPD knowledge bank.xlsx",
-    ...
-) {
+read_channel_table <- function(team, channel, filepath, ...) {
 
   .check_internet()
   .check_auth(scope_group = "teams")
@@ -54,7 +49,6 @@ read_channel_table <- function(
       call. = FALSE
     )
   }
-
 
   team <- Microsoft365R::get_team(team)
   channel <- team$get_channel(channel)
@@ -75,7 +69,7 @@ read_channel_table <- function(
 #'you have access to and have been authorised against (see details).
 #'
 #'@param filepath Character. The path to a file that contains tabular data to be
-#'  read in, starting from the root of your Business OneDrive folder, i.e. 
+#'  read in, starting from the root of your Business OneDrive folder, i.e.
 #'  C:/Users/your.name/OneDrive - UK Health Security Agency/ (see the files
 #'  and folders available from this location by running [list_onedrive_files]
 #'  with empty arguments).
