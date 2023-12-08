@@ -1,0 +1,18 @@
+Package: defenestrate
+Title: Helpers for Working with Microsoft's Online Services Programmatically
+Version: 0.1.0
+Authors@R: person("Matt", "Dray", email = "mwdray@gmail.com", role = c("aut", "cre"))
+Description: Some functions to simplify the process of working with files on 
+    Microsoft's online teamworking products (OneDrive, Teams). Built largely
+    around the 'Microsoft365R' package.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Imports: 
+    AzureAuth,
+    curl,
+    Microsoft365R,
+    readODS,
+    readr,
+    readxl
