@@ -5,9 +5,11 @@
 [![Project Status: Inactive – The project has reached a stable, usable state but is no longer being actively developed; support/maintenance will be provided as time allows.](https://www.repostatus.org/badges/latest/inactive.svg)](https://www.repostatus.org/#inactive)
 <!-- badges: end -->
 
-The purpose of {defenestrate} is to help me and my team mates interact with files on Microsoft OneDrive and Teams by wrapping and extending functions from the [{Microsoft365R}](https://github.com/Azure/Microsoft365R) package. Your mileage may vary.
+The purpose of {defenestrate} was to help me and my team mates interact with files on Microsoft OneDrive and Teams by wrapping and extending functions from the [{Microsoft365R}](https://github.com/Azure/Microsoft365R) package. I've made it public for posterity.
 
-Why the name? Something something 'push files out of Windows'.
+If this is something you're interested in, you should check out [Eli's {sharepointr} package](https://elipousson.github.io/sharepointr/) instead.
+
+Why the name 'defenestrate'? Something something 'push files out of Windows'.
 
 ## Install
 
